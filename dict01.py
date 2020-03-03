@@ -1,6 +1,6 @@
 # 1. Dictionary is mutable.
 # 2. Elements of a dictionary has no order.
-# 3. Types of a key of an element includes boolean, integer, float, tuple, string.
+# 3. Types of a key of an element includes boolean, integer, float, tuple, string and function.
 # 4. Dictionary could be accessed by index statement.
 # 5. Dictionary methods: update, clear, get, keys, values, items, copy.
 # 6. Use "del" statement to delete an element.
