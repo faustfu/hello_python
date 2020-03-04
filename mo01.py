@@ -2,6 +2,7 @@
 # 2. A python script is a module.
 # 3. Module search paths keep in sys.path
 # 4. Use a folder with __init__.py to declare a package.
+# 5. A module is a singleton, it will be loaded once at runtime.
 
 import sys
 from sys import argv
