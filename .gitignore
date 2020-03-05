@@ -1,1 +1,7 @@
 __pycache__/
+*.txt
+*.out
+*.csv
+*.json
+*.xml
+*.yaml
