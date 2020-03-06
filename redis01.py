@@ -4,6 +4,7 @@ import redis
 conn = redis.Redis()
 
 # print(conn.keys('*'))
+# access pairs
 conn.set('test01', 'abc一二三')
 print(conn.get('test01'))
 conn.setnx('test01', 'abc')  # ignore if exists
@@ -29,3 +30,7 @@ conn.incrbyfloat('test02',10)
 print(conn.mget(['test01', 'test02', 'test03']))
 conn.incrbyfloat('test02', -1)
 print(conn.mget(['test01', 'test02', 'test03']))
+
+conn.set('test04', '4444')
+conn.expire('test04', 20) # expire a pair in 20 seconds
+print(conn.ttl('test04')) # get a pair's ttl

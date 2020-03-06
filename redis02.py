@@ -2,6 +2,7 @@ import redis
 
 conn = redis.Redis()
 
+# access a list
 conn.lpush('zoo', 'bear', 'duck') # push a value from left into the list
 print(conn.lrange('zoo', 0, -1)) # get the list
 conn.lset('zoo', 1, 'cat')
