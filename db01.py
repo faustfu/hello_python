@@ -2,6 +2,8 @@
 import sqlalchemy as sa
 
 conn = sa.create_engine('sqlite://')
+
+# control db by using SQL directly
 insert_sql = 'insert into zoo(critter, count, damages) values(?, ?, ?)'
 select_sql = 'select * from zoo'
 

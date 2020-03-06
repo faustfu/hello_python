@@ -1,6 +1,8 @@
 import sqlalchemy as sa
 
 conn = sa.create_engine('sqlite://')
+
+# control db by using expression language
 meta = sa.MetaData()
 zoo = sa.Table('zoo', meta,
                sa.Column('critter', sa.String, primary_key=True),
