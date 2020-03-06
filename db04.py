@@ -1,3 +1,4 @@
+# 1. Module:dbm is for dictionary persistent solution.
 import dbm
 
 filename = 'a.dbm'
