@@ -1,3 +1,5 @@
+# File and directory operations.
+
 import os
 import shutil
 import glob
