@@ -8,4 +8,5 @@ __pycache__/
 *.cfg
 *.db
 *.dbm
-
+*.log
+*.gif
