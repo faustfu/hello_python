@@ -1,17 +1,18 @@
+# Use another process to be a queue.
 import multiprocessing as mp
 
 
 def washer(dishes, queue):
     for dish in dishes:
         print('washing', dish, 'dish')
-        queue.put(dish)
+        queue.put(dish) # create a task
 
 
 def dryer(tasks):
     while True:
-        dish = tasks.get()
-        print('drying,', dish, 'dish')
-        tasks.task_done()
+        dish = tasks.get() # get a task
+        print('drying', dish, 'dish')
+        tasks.task_done() # commit the task
 
 
 if __name__ == '__main__':
