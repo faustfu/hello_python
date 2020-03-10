@@ -1,5 +1,4 @@
 import numpy as np
-from numpy import *
 
 print(np.array([1, 2, 3, 4]))  # create an array
 print(np.arange(10))  # create an array in range
