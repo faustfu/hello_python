@@ -11,7 +11,7 @@ def change1():
 
 
 def change2():
-    a = 2
+    a = 2 # shadow the global variable by declaring it again in local scope.
     print('in local: ', a)
 
 
@@ -24,7 +24,7 @@ def change3():
 change1()
 change2()
 
-print('in global: ', a)
+print('in global: ', a) # Global variables wouldn't be affected in local scope.
 
 
 change3()

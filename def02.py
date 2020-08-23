@@ -1,4 +1,4 @@
-# 1. Functions are objects. SO they could be variables or parameters.
+# 1. Functions are objects. So they could be variables or parameters.
 # 2. Functions could return new functions/closures.
 # 3. Use "lambda" statement to build anonymous, one-line functions.
 # 4. Use "yield" statement to build a generator function.
