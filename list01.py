@@ -13,3 +13,5 @@ for i, x in enumerate(some_list):
     print(i, x, x * (4 ** i))
 
 print(sum([x * (4 ** i) for i, x in enumerate(some_list)]))
+
+print('end of i is', i)

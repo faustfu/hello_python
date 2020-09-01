@@ -4,4 +4,5 @@
 
 empty_tuple = ()
 a_tuple = 1,
-print("a tuple %s" % a_tuple)
+pair_tuple = 2,3
+print("a tuple %s" % a_tuple, ', len of pair_tuple =', len(pair_tuple))

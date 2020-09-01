@@ -13,6 +13,6 @@ def whoami(what):
 if __name__ == '__main__':
     whoami('hi')
 
-    for n in range(4):
+    for n in range(400):
         p = threading.Thread(target=do_this, args=('func %s' % n,)) # create a thread to do a task.
         p.start()

@@ -1,5 +1,7 @@
 # 1. Python has two scope: global or local scope.
-# 2. Global variables are read-only in local scope by default.
+# 2. Scope chain: builtins(modules) > Global(module) > outer(closure) > local(function)
+# 3. Global variables are read-only in local scope by default.
+# 4. Use "nonlocal" statement to access non-local variables.
 # 3. Use "global" statement to access global variables in local scope.
 # 4. Use locals() to show local variables.
 # 5. Use globals() to show global variables.

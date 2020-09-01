@@ -26,4 +26,4 @@ if __name__ == '__main__':
     dishes = ['a', 'b', 'c', 'd']
     washer(dishes, dish_queue)
 
-    dish_queue.join()  # wait for all tasks to be done
+    dish_queue.join()  # wait for all tasks to be done to continue.

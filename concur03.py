@@ -29,8 +29,7 @@ if __name__ == '__main__':
 
     dishes = ['a', 'b', 'c', 'd']
     washer(dishes, dish_queue)
-
-    dish_queue.join()  # wait for all tasks to be done
+    dish_queue.join()  # wait for all tasks in the queue to be done to continue.
 
     for i in range(2):
         dish_queue.put(None)  # stop every workers

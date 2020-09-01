@@ -12,7 +12,7 @@ linkname = 'qoos.txt'
 slinkname = 'waha.txt'
 foldername = 'dump'
 
-with open(filename, 'wt') as fout:
+with open(filename, 'wt') as fout: # Resources will be released as leaving the "with as" block.
     fout.write('BACD\ndges\tpslsss')
 
 if os.path.exists(filename):
