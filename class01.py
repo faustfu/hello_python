@@ -12,14 +12,17 @@ class Person1():
 
 class Person2():
   def __init__(self, name):
-    self.name = name
+    self.name = name # property of instance
 
 class Person3():
-  count = 0
+  count = 0 # property of class
+
   def __init__(self):
     Person3.count += 1
+
   def exclaim(self):
     pass
+
   @classmethod
   def kids(cls):
     print('Person3 has', cls.count, 'objects.')

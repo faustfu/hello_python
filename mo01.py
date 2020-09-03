@@ -4,6 +4,7 @@
 # 4. Use a folder with __init__.py to declare a package.
 # 5. A module is a singleton, it will be loaded once at runtime.
 # 6. Auto-loaded module: __builtins__, includes common functions likes print(), input(), dir(), ...
+# 7. Use dir() to show attributes of a module.
 
 import sys
 from sys import argv
