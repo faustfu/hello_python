@@ -1,6 +1,7 @@
 # 1. Inheritance is a way to reuse codes.
 # 2. Subclass could replace superclass's methods or create new methods.
 # 3. Subclass could use super() to get superclass's object reference.
+# 4. Python allows multiple inheritance. It is good to just use multiple inheritance with abstract classes.
 class Car():
     def __init__(self, name):
         self.name = name

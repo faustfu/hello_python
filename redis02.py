@@ -11,3 +11,7 @@ conn.rpush('zoo', 'rabbit', 'rat') # push a value from right into the list
 print(conn.lrange('zoo', 0, -1))
 print(conn.lindex('zoo', 1)) # get a value by index
 conn.delete('zoo')
+
+# iterate by a list
+for i in conn.scan_iter('ws-*'):
+  conn.delete(i)
