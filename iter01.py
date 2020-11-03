@@ -1,4 +1,5 @@
 # 1. There are many utilities for iterator or generator in package:itertools.
+# 2. Two types could be used for declaration: typing.Sequence and typing.MutableSequence.
 import itertools
 
 MAX_ITERATION = 10

@@ -31,7 +31,7 @@ def document_it(func):
         return result
     return wrapped
 
-
+# same as document_it(add_ins), wrap a function by the decorator.
 @document_it
 def add_ins(a, b):
     return a + b

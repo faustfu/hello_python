@@ -4,7 +4,7 @@
 # 4. Dictionary could be accessed by index statement.
 # 5. Dictionary methods: update, clear, get, keys, values, items, copy.
 # 6. Use "del" statement to delete an element.
-# 6. Use "in" statement to if a element is in the dictionary.
+# 7. Use "in" statement to if a element is in the dictionary.
 empty_dict = {}
 print("empty dict %s" % empty_dict)
 a_dict = dict([['a', 1], ['b', 2]])
@@ -15,3 +15,8 @@ c_dict = dict(['ab', 'cd'])
 print("c dict %s" % c_dict)
 d_dict = dict(('ab', 'cd'))
 print("d dict %s" % d_dict)
+
+merged = {}
+merged.update(a_dict)
+merged.update(c_dict)
+print('merge a and c =', merged)
