@@ -18,3 +18,14 @@ with ignore(FileNotFoundError):
 with suppress(FileNotFoundError):
     for line in open(sys.argv[1]):
         print(line, end='')
+
+@contextmanager
+def catch(msg: str = '', sub_title: str = '', title: str = '') -> Iterator[None]:
+    try:
+        yield
+    except Exception as e:
+        print(f'{title}{sub_title})Unknown error {e}, msg = {msg}')
+
+with catch():
+    print('ok')
+    raise Exception('Huh?')
